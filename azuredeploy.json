@@ -5,7 +5,7 @@
   "variables": {  },
   "resources": [
    {
-  "name": "jsonlabstoragedemo",
+  "name": "jsonlabstoragedemo2",
   "type": "Microsoft.Storage/storageAccounts",
   "apiVersion": "2017-06-01",
   "sku": {
