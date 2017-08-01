@@ -1,0 +1,47 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {  },
+  "variables": {  },
+  "resources": [
+   {
+  "name": "jsonlabstoragedemo",
+  "type": "Microsoft.Storage/storageAccounts",
+  "apiVersion": "2017-06-01",
+  "sku": {
+    "name": "Standard_LRS"
+  },
+  "kind": "storage",
+  "location": "Eastus2",
+  "tags": {},
+  "identity": {
+    "type": "SystemAssigned"
+  },
+  "properties": {
+    "customDomain": {
+      "name": "string",
+      "useSubDomain": boolean
+    },
+    "encryption": {
+      "services": {
+        "blob": {
+          "enabled": "false"
+        },
+        "file": {
+          "enabled": "false"
+        }
+      },
+      "keySource": "string",
+      "keyvaultproperties": {
+        "keyname": "string",
+        "keyversion": "string",
+        "keyvaulturi": "string"
+      }
+    },
+    "accessTier": "string",
+    "supportsHttpsTrafficOnly": "false"
+  }
+}   
+    ],
+  "outputs": {  }
+}
